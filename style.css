@@ -91,6 +91,7 @@ body {
   z-index: 9999;
   text-decoration: none;
 }
+
 .skip-link:focus {
   top: 0;
 }
@@ -101,11 +102,13 @@ body {
   border-bottom: 1px solid var(--border-purple);
   padding: 14px 0;
 }
+
 .navbar-brand {
   color: var(--gold) !important;
   font-size: 1.3rem;
   letter-spacing: 2px;
 }
+
 .nav-link {
   color: var(--text-muted) !important;
   font-size: 14px;
@@ -115,6 +118,7 @@ body {
   border-bottom: 2px solid transparent;
   transition: 0.2s;
 }
+
 .nav-link:hover,
 .nav-link.active {
   color: var(--gold) !important;
@@ -134,21 +138,24 @@ body {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background-image: url("assets/hero-bg.jpg");
+  background-image: url("images/images.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(14, 14, 14, 0.75);
   z-index: 0;
 }
+
 .hero-content {
   position: relative;
   z-index: 1;
 }
+
 .hero-eyebrow {
   font-size: 11px;
   letter-spacing: 4px;
@@ -156,6 +163,7 @@ body {
   color: var(--gold);
   margin-bottom: 14px;
 }
+
 .hero-heading {
   font-size: clamp(2.2rem, 6vw, 4rem);
   font-weight: 900;
@@ -163,14 +171,17 @@ body {
   line-height: 1.1;
   margin-bottom: 12px;
 }
+
 .hero-heading span {
   color: var(--gold);
 }
+
 .hero-sub {
   font-size: 1.1rem;
   color: var(--text-muted);
   margin-bottom: 8px;
 }
+
 .hero-tag {
   background-color: var(--bg-card-alt);
   border: 1px solid var(--border-purple);
@@ -179,6 +190,7 @@ body {
   font-size: 12px;
   color: var(--text-muted);
 }
+
 .btn-hero {
   display: inline-block;
   background-color: var(--gold);
@@ -190,10 +202,12 @@ body {
   text-decoration: none;
   transition: 0.2s;
 }
+
 .btn-hero:hover {
   background-color: #f0d080;
   color: #0e0e0e;
 }
+
 .btn-hero-outline {
   display: inline-block;
   background-color: transparent;
@@ -206,6 +220,7 @@ body {
   text-decoration: none;
   transition: 0.2s;
 }
+
 .btn-hero-outline:hover {
   background-color: var(--gold);
   color: #0e0e0e;
@@ -225,16 +240,19 @@ body {
 .about-section {
   background-color: var(--bg-body);
 }
+
 .about-card {
   background-color: var(--bg-about-card);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 }
+
 .about-left {
   background-color: var(--bg-about-left);
   border-right: 1px solid var(--border-about);
 }
+
 .profile-img {
   width: 120px;
   height: 120px;
@@ -242,20 +260,24 @@ body {
   object-fit: cover;
   border: 3px solid var(--gold);
 }
+
 .about-name {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 4px;
 }
+
 .about-role {
   font-size: 13px;
   color: var(--text-muted-about);
 }
+
 .about-details {
   width: 100%;
   text-align: left;
 }
+
 .about-details li {
   display: flex;
   justify-content: space-between;
@@ -264,24 +286,29 @@ body {
   border-bottom: 1px solid var(--border-about);
   color: var(--text-body);
 }
+
 .about-details li:last-child {
   border-bottom: none;
 }
+
 .detail-label {
   font-weight: 600;
   color: var(--detail-label-color);
 }
+
 .detail-value {
   color: var(--text-body);
   text-align: right;
   max-width: 55%;
 }
+
 .skills-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   justify-content: center;
 }
+
 .badge-skill {
   background-color: var(--bg-card-alt);
   color: var(--text-muted);
@@ -291,9 +318,11 @@ body {
   font-size: 11px;
   font-weight: 500;
 }
+
 .about-right {
   background-color: var(--bg-about-right);
 }
+
 .section-label {
   display: inline-block;
   background-color: var(--label-bg);
@@ -305,17 +334,20 @@ body {
   padding: 4px 14px;
   border-radius: 20px;
 }
+
 .about-heading {
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--text-heading);
 }
+
 .about-text {
   font-size: 0.92rem;
   color: var(--text-body);
   line-height: 1.7;
   margin-bottom: 10px;
 }
+
 .about-stat {
   background-color: var(--bg-stat);
   border: 1px solid var(--border-about);
@@ -323,12 +355,14 @@ body {
   padding: 14px;
   text-align: center;
 }
+
 .stat-number {
   display: block;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--stat-number-color);
 }
+
 .stat-label {
   display: block;
   font-size: 12px;
@@ -344,19 +378,31 @@ body {
   }
 }
 
+/*profile image*/
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--gold);
+}
+
 /* PROJECTS SECTION */
 .projects-section {
   background-color: var(--bg-body);
 }
+
 .projects-heading {
   font-size: 2rem;
   font-weight: 700;
   color: var(--text-primary);
 }
+
 .projects-sub {
   color: var(--text-muted);
   font-size: 0.95rem;
 }
+
 .project-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-card);
@@ -366,20 +412,26 @@ body {
   flex-direction: column;
   transition: 0.25s;
 }
+
 .project-card:hover {
   border-color: var(--gold);
   transform: translateY(-4px);
 }
+
 .project-img-wrap {
   position: relative;
   overflow: hidden;
 }
-.project-img {
-  width: 100%;
-  height: 180px;
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   object-fit: cover;
-  display: block;
+  object-position: top;
+  border: 3px solid var(--gold);
 }
+
 .project-badge {
   position: absolute;
   top: 10px;
@@ -391,38 +443,45 @@ body {
   padding: 3px 10px;
   border-radius: 20px;
 }
+
 .project-badge-wip {
   background-color: var(--gold);
 }
+
 .project-body {
   padding: 16px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
+
 .project-title {
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 2px;
 }
+
 .project-sub {
   font-size: 12px;
   color: var(--text-muted);
   margin-bottom: 10px;
 }
+
 .project-desc {
   font-size: 13px;
   color: var(--text-desc);
   line-height: 1.6;
   flex: 1;
 }
+
 .project-tags {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
   margin-top: 10px;
 }
+
 .project-tag {
   background-color: var(--bg-card-alt);
   color: var(--text-muted);
@@ -431,6 +490,23 @@ body {
   padding: 2px 10px;
   font-size: 11px;
 }
+
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-btns {
+  margin-top: auto;
+}
+
 .btn-project-primary {
   display: inline-block;
   background-color: var(--gold);
@@ -443,10 +519,12 @@ body {
   transition: 0.2s;
   white-space: nowrap;
 }
+
 .btn-project-primary:hover {
   background-color: #f0d080;
   color: #0e0e0e;
 }
+
 .btn-project-outline {
   display: inline-flex;
   align-items: center;
@@ -461,9 +539,23 @@ body {
   text-decoration: none;
   transition: 0.2s;
 }
+
 .btn-project-outline:hover {
   border-color: var(--gold);
   color: var(--gold);
+}
+
+.project-img-wrap {
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.project-img {
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
 }
 
 /* RESPONSIVE PROJECTS */
@@ -620,5 +712,79 @@ body {
   }
   .contact-heading {
     font-size: 1.6rem;
+  }
+}
+
+
+/* NAVBAR FIX — no JS needed, links always visible */
+.navbar .navbar-nav {
+  gap: 4px;
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-nav {
+    gap: 2px;
+  }
+  .nav-link {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+}
+
+/* HERO 360px to 4K fix */
+@media (min-width: 1920px) {
+  .hero-heading {
+    font-size: 5rem;
+  }
+  .hero-sub {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-heading {
+    font-size: 1.6rem;
+  }
+  .hero-sub {
+    font-size: 0.85rem;
+  }
+  .btn-hero, .btn-hero-outline {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}
+
+/* PROJECT CARD HEIGHT FIX */
+.col-lg-4.col-md-6 {
+  display: flex;
+}
+.project-card {
+  width: 100%;
+}
+
+/* CONTACT FORM FIELD ORDER FIX */
+/* Assignment spec says: Email Address, Name, Subject, Message */
+/* Already matched above */
+
+/* PRINT RESUME VIEW — bonus */
+@media print {
+  .navbar,
+  .hero-section,
+  .projects-section,
+  .contact-section,
+  .footer-bar {
+    display: none !important;
+  }
+  .about-section {
+    display: block !important;
+    padding: 0 !important;
+  }
+  .about-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
   }
 }

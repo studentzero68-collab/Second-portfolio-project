@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mukelani N. Sindana — Portfolio</title>
 
-  <!-- Bootstrap 5 CSS -->
+  <!-- Bootstrap 5 CSS only — no Bootstrap JS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
   <!-- Bootstrap Icons -->
@@ -23,39 +23,34 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">MNS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+        <a class="navbar-brand fw-bold" href="#hero">MNS</a>
+        <div class="navbar-nav ms-auto flex-row flex-wrap gap-2">
+          <a class="nav-link active" href="#hero">Home</a>
+          <a class="nav-link" href="#about">About Me</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- MAIN CONTENT PLACEHOLDER -->
   <main id="main-content">
-    <main id="main-content">
 
     <!-- HERO -->
     <section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center">
       <div class="hero-overlay"></div>
-      <div class="hero-content container">
+      <div class="hero-content container px-3">
         <p class="hero-eyebrow">Welcome to my portfolio</p>
         <h1 class="hero-heading">I am <span>Mukelani N. Sindana</span></h1>
         <p class="hero-sub">Full Stack Web Developer in Training</p>
         <div class="hero-tags d-flex justify-content-center flex-wrap gap-2 mt-4">
           <span class="hero-tag">Gamer</span>
           <span class="hero-tag">Anime fan</span>
+          <span class="hero-tag">Disciplined builder</span>
+          <span class="hero-tag">Made with purpose</span>
         </div>
-        <div class="mt-4">
-          <a href="#projects" class="btn-hero me-2">View my work</a>
+        <div class="mt-4 d-flex justify-content-center flex-wrap gap-3">
+          <a href="#projects" class="btn-hero">View my work</a>
           <a href="#contact" class="btn-hero-outline">Get in touch</a>
         </div>
       </div>
@@ -64,6 +59,9 @@
     <!-- ABOUT ME -->
     <section id="about" class="about-section py-5">
       <div class="container">
+        <div class="text-center mb-4">
+          <span class="section-label">Who I am</span>
+        </div>
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="about-card">
@@ -72,15 +70,35 @@
                 <!-- LEFT COLUMN -->
                 <div class="col-md-4 about-left d-flex flex-column align-items-center text-center p-4">
                   <div class="about-avatar mb-3">
-                    <img src="assets/profile.jpg" alt="Mukelani N. Sindana profile photo" class="profile-img"/>
+                    <img src="images/86082ffdf56115b8601a27d643ea5d0d_2.jpeg" alt="Mukelani N. Sindana profile photo" class="profile-img"/>
                   </div>
                   <h3 class="about-name">Mukelani N. Sindana</h3>
                   <p class="about-role">Full Stack Developer in Training</p>
-                  <ul class="about-details list-unstyled mt-3">
-                    <li><span class="detail-label">Name</span><span class="detail-value">Mukelani N. Sindana</span></li>
-                    <li><span class="detail-label">Location</span><span class="detail-value">Gauteng, South Africa</span></li>
-                    <li><span class="detail-label">Email</span><span class="detail-value">studentzero68@gmail.com</span></li>
-                    <li><span class="detail-label">Status</span><span class="detail-value">Open to opportunities</span></li>
+                  <ul class="about-details list-unstyled mt-3 w-100">
+                    <li>
+                      <span class="detail-label">Name</span>
+                      <span class="detail-value">Mukelani N. Sindana</span>
+                    </li>
+                    <li>
+                      <span class="detail-label">Profile</span>
+                      <span class="detail-value">Web Developer</span>
+                    </li>
+                    <li>
+                      <span class="detail-label">Phone</span>
+                      <span class="detail-value">+27 000 000 0000</span>
+                    </li>
+                    <li>
+                      <span class="detail-label">Email</span>
+                      <span class="detail-value">studentzero68@gmail.com</span>
+                    </li>
+                    <li>
+                      <span class="detail-label">Location</span>
+                      <span class="detail-value">Gauteng, South Africa</span>
+                    </li>
+                    <li>
+                      <span class="detail-label">Status</span>
+                      <span class="detail-value">Open to opportunities</span>
+                    </li>
                   </ul>
                   <div class="skills-badges mt-4">
                     <span class="badge-skill">HTML</span>
@@ -98,8 +116,7 @@
                 <div class="col-md-8 about-right p-4">
                   <span class="section-label">About me</span>
                   <h2 class="about-heading mt-2 mb-3">Building things that actually matter</h2>
-                  <p class="about-text">I am Mukelani, a 20-year-old Full Stack Web Developer in training studying at iHub Africa, based in Gauteng, South Africa.</p>
-                  <p class="about-text">I didn't come from a background that handed me everything so I learned early that if I want something I have to go and get it myself. Web development is that thing for me right now. I started coding because I needed something that was mine — something I could build a future on.</p>
+                  <p class="about-text">I am Mukelani, a 20-year-old Full Stack Web Developer in training studying at iHub Africa, based in Gauteng, South Africa. I didn't come from a background that handed me everything so I learned early that if I want something I have to go and get it myself.</p>
                   <p class="about-text">What drives me is building things that actually matter — charity platforms, community pages and experiences that make people feel something. I am quick to adapt, I don't mind making mistakes and I don't pretend to know everything. I just keep going.</p>
                   <div class="row mt-4 g-3">
                     <div class="col-6">
@@ -123,6 +140,7 @@
         </div>
       </div>
     </section>
+
     <!-- PROJECTS -->
     <section id="projects" class="projects-section py-5">
       <div class="container">
@@ -133,11 +151,11 @@
         </div>
         <div class="row g-4">
 
-          <!-- PROJECT 1 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card h-100">
+          <!-- PROJECT 1 — TESLA -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
               <div class="project-img-wrap">
-                <img src="assets/tesla.jpg" alt="Tesla UI Clone project screenshot" class="project-img"/>
+                <img src="images/Screenshot_2026-04-23_151630.png" alt="Tesla UI Clone project screenshot showing hero section with car" class="project-img"/>
                 <span class="project-badge">Live</span>
               </div>
               <div class="project-body">
@@ -149,18 +167,18 @@
                   <span class="project-tag">CSS</span>
                 </div>
                 <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/Tesla-project-mukelani/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline"><i class="bi bi-code-slash"></i></a>
+                  <a href="https://justafaketesla.netlify.app" target="_blank" class="btn-project-primary">View Website</a>
+                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline" aria-label="View Tesla project code"><i class="bi bi-code-slash"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- PROJECT 2 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card h-100">
+          <!-- PROJECT 2 — NETFLIX -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
               <div class="project-img-wrap">
-                <img src="assets/netflix.jpg" alt="Netflix Landing Page project screenshot" class="project-img"/>
+                <img src="images/Screenshot_2026-05-26_140856.png" alt="Netflix Landing Page clone screenshot showing hero with email signup" class="project-img"/>
                 <span class="project-badge">Live</span>
               </div>
               <div class="project-body">
@@ -172,18 +190,18 @@
                   <span class="project-tag">CSS</span>
                 </div>
                 <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/Netflix/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline"><i class="bi bi-code-slash"></i></a>
+                  <a href="https://dummynetfli.netlify.app" target="_blank" class="btn-project-primary">View Website</a>
+                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline" aria-label="View Netflix project code"><i class="bi bi-code-slash"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- PROJECT 3 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card h-100">
+          <!-- PROJECT 3 — YOUTUBE -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
               <div class="project-img-wrap">
-                <img src="assets/youtube.jpg" alt="YouTube Clone project screenshot" class="project-img"/>
+                <img src="images/Screenshot_2026-06-15_110911.png" alt="YouTube Clone screenshot showing video grid with dark mode" class="project-img"/>
                 <span class="project-badge">Live</span>
               </div>
               <div class="project-body">
@@ -196,18 +214,18 @@
                   <span class="project-tag">JavaScript</span>
                 </div>
                 <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://github.com/studentzero68-collab/Youtube-basic" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab/Youtube-basic" target="_blank" class="btn-project-outline"><i class="bi bi-code-slash"></i></a>
+                  <a href="https://studentzero68-collab.github.io/Youtube-basic" target="_blank" class="btn-project-primary">View Website</a>
+                  <a href="https://github.com/studentzero68-collab/Youtube-basic" target="_blank" class="btn-project-outline" aria-label="View YouTube project code"><i class="bi bi-code-slash"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- PROJECT 4 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card h-100">
+          <!-- PROJECT 4 — TO-DO -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
               <div class="project-img-wrap">
-                <img src="./images/download (5).jpg" alt="To-Do List App project screenshot" class="project-img"/>
+                <img src="images/Screenshot_2026-05-21_142913.png" alt="To-Do List App screenshot showing task cards on purple background" class="project-img"/>
                 <span class="project-badge">Live</span>
               </div>
               <div class="project-body">
@@ -221,17 +239,17 @@
                 </div>
                 <div class="project-btns d-flex gap-2 mt-3">
                   <a href="https://studentzero68-collab.github.io/To-do-list/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline"><i class="bi bi-code-slash"></i></a>
+                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline" aria-label="View To-Do project code"><i class="bi bi-code-slash"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- PROJECT 5 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card h-100">
+          <!-- PROJECT 5 — BAKERY -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
               <div class="project-img-wrap">
-                <img src="./images/#croissant #baking #bake #bakingrecipe #pie #cake #cakedesigner #cakeideas #fruit #fruitcake #food #pastry #foodlover #foodies #foodart #desserts #aesthetic  #snack #dessert  #yummy #cake #bak.jpg" alt="Baker's Delight project screenshot" class="project-img"/>
+                <img src="images/download__5_.jpg" alt="Baker's Delight cookbook showing pastries and recipe cards" class="project-img"/>
                 <span class="project-badge project-badge-wip">In progress</span>
               </div>
               <div class="project-body">
@@ -244,18 +262,18 @@
                   <span class="project-tag">JavaScript</span>
                 </div>
                 <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/Bakery-project1/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab/Bakery-project1" target="_blank" class="btn-project-outline"><i class="bi bi-code-slash"></i></a>
+                  <a href="https://github.com/studentzero68-collab/Bakery-project1" target="_blank" class="btn-project-primary">View Website</a>
+                  <a href="https://github.com/studentzero68-collab/Bakery-project1" target="_blank" class="btn-project-outline" aria-label="View Bakery project code"><i class="bi bi-code-slash"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- PROJECT 6 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card h-100">
+          <!-- PROJECT 6 — PORTFOLIO -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
               <div class="project-img-wrap">
-                <img src="assets/portfolio.jpg" alt="Personal Portfolio project screenshot" class="project-img"/>
+                <img src="images/Screenshot_2026-06-15_110937.png" alt="Personal Portfolio website screenshot showing dark themed layout" class="project-img"/>
                 <span class="project-badge">Live</span>
               </div>
               <div class="project-body">
@@ -269,7 +287,7 @@
                 </div>
                 <div class="project-btns d-flex gap-2 mt-3">
                   <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline"><i class="bi bi-code-slash"></i></a>
+                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline" aria-label="View Portfolio code"><i class="bi bi-code-slash"></i></a>
                 </div>
               </div>
             </div>
@@ -288,78 +306,48 @@
           <p class="contact-sub">I am open to opportunities, collaborations and conversations.</p>
         </div>
 
-        <div class="row justify-content-center g-4">
-
-          <!-- SOCIAL ICONS -->
-          <div class="col-12 text-center mb-2">
-            <div class="social-icons d-flex justify-content-center gap-3">
-              <a href="https://github.com/studentzero68-collab" target="_blank" class="social-icon" aria-label="GitHub">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/mukelani-sindana" target="_blank" class="social-icon" aria-label="LinkedIn">
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-            </div>
+        <!-- SOCIAL ICONS ROW -->
+        <div class="col-12 text-center mb-4">
+          <div class="social-icons d-flex justify-content-center gap-3">
+            <a href="https://github.com/studentzero68-collab" target="_blank" class="social-icon" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mukelani-sindana" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
           </div>
+        </div>
+
+        <div class="row justify-content-center g-4">
 
           <!-- CONTACT FORM -->
           <div class="col-lg-7">
             <div class="contact-card">
               <form action="#" method="POST" novalidate>
-
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label for="name" class="form-label contact-label">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      class="form-control contact-input"
-                      placeholder="Your name"
-                      required
-                    />
+                    <label for="contact-email" class="form-label contact-label">Email address</label>
+                    <input type="email" id="contact-email" name="email" class="form-control contact-input" placeholder="your@email.com" required/>
                   </div>
                   <div class="col-md-6">
-                    <label for="email" class="form-label contact-label">Email address</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="form-control contact-input"
-                      placeholder="your@email.com"
-                      required
-                    />
+                    <label for="contact-name" class="form-label contact-label">Name</label>
+                    <input type="text" id="contact-name" name="name" class="form-control contact-input" placeholder="Your name" required/>
                   </div>
                   <div class="col-12">
-                    <label for="subject" class="form-label contact-label">Subject</label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      class="form-control contact-input"
-                      placeholder="What is this about?"
-                      required
-                    />
+                    <label for="contact-subject" class="form-label contact-label">Subject</label>
+                    <input type="text" id="contact-subject" name="subject" class="form-control contact-input" placeholder="What is this about?" required/>
                   </div>
                   <div class="col-12">
-                    <label for="message" class="form-label contact-label">Message</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      class="form-control contact-input"
-                      rows="5"
-                      placeholder="Tell me what you have in mind..."
-                      required
-                    ></textarea>
+                    <label for="contact-message" class="form-label contact-label">Message</label>
+                    <textarea id="contact-message" name="message" class="form-control contact-input" rows="5" placeholder="Tell me what you have in mind..." required></textarea>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="btn-contact-submit w-100">Send message</button>
                   </div>
                 </div>
-
               </form>
             </div>
           </div>
@@ -367,47 +355,34 @@
           <!-- CONTACT DETAILS -->
           <div class="col-lg-4">
             <div class="contact-details d-flex flex-column gap-3">
-
               <div class="contact-detail-item">
-                <div class="contact-detail-icon">
-                  <i class="bi bi-envelope"></i>
-                </div>
+                <div class="contact-detail-icon"><i class="bi bi-envelope"></i></div>
                 <div>
                   <p class="contact-detail-label">Email</p>
                   <p class="contact-detail-value">studentzero68@gmail.com</p>
                 </div>
               </div>
-
               <div class="contact-detail-item">
-                <div class="contact-detail-icon">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
+                <div class="contact-detail-icon"><i class="bi bi-geo-alt"></i></div>
                 <div>
                   <p class="contact-detail-label">Location</p>
                   <p class="contact-detail-value">Gauteng, South Africa</p>
                 </div>
               </div>
-
               <div class="contact-detail-item">
-                <div class="contact-detail-icon">
-                  <i class="bi bi-github"></i>
-                </div>
+                <div class="contact-detail-icon"><i class="bi bi-github"></i></div>
                 <div>
                   <p class="contact-detail-label">GitHub</p>
                   <p class="contact-detail-value">studentzero68-collab</p>
                 </div>
               </div>
-
               <div class="contact-detail-item">
-                <div class="contact-detail-icon">
-                  <i class="bi bi-briefcase"></i>
-                </div>
+                <div class="contact-detail-icon"><i class="bi bi-briefcase"></i></div>
                 <div>
                   <p class="contact-detail-label">Status</p>
                   <p class="contact-detail-value">Open to opportunities</p>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -416,12 +391,12 @@
     </section>
 
   </main>
-  </main>
 
   <!-- FOOTER -->
   <footer class="footer-bar text-center py-4">
     <p class="mb-0">Developed by <span class="footer-name">Mukelani N. Sindana</span> using Bootstrap, for portfolio purposes.</p>
     <p class="footer-copy mt-1">© 2026 Mukelani N. Sindana. All rights reserved.</p>
   </footer>
+
 </body>
 </html>

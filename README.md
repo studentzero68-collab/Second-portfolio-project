@@ -13,7 +13,7 @@ A personal portfolio website built with Bootstrap 5 as part of my Full Stack Web
 - Projects grid — 6 project cards with images, descriptions, tech tags and live links
 - Contact section — social icons, contact form with HTML validation and contact details
 - Footer — clean dark footer with my name and credit
-- Bonus — auto dark mode using prefers-color-scheme and CSS variables
+- Bonus — auto dark mode using prefers-color-scheme + CSS variables, and print-ready résumé view
 
 ## Sections implemented
 
@@ -22,7 +22,7 @@ A personal portfolio website built with Bootstrap 5 as part of my Full Stack Web
 - Projects grid — 3 columns on desktop, 2 on tablet, 1 on mobile
 - Contact with form validation, social icons and contact details
 - Dark footer
-- Bonus: auto dark mode via prefers-color-scheme
+- Bonus: auto dark mode via prefers-color-scheme + print résumé (@media print)
 
 ## Tech used
 
@@ -53,5 +53,11 @@ A personal portfolio website built with Bootstrap 5 as part of my Full Stack Web
 
 Mukelani N. Sindana
 Full Stack Web Developer in Training | iHub Africa | Gauteng, South Africa
+
+## Image credits
+
+- Hero background and project screenshots: personal project captures
+- Profile photo: personal image (`images/image.png`)
+- Baker's Delight banner: personal project asset (`images/download (5).jpg`)
 
 © 2026 Mukelani N. Sindana

@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Mukelani N. Sindana — Website Designer portfolio. Projects include Tesla, Netflix, YouTube clones and more. Based in Gauteng, South Africa."/>
   <title>Mukelani N. Sindana — Portfolio</title>
 
-
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
-
-  
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar" aria-label="Primary">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#hero">Mukelani NKazimulo Sindana</a>
-        <div class="navbar-nav ms-auto flex-row flex-wrap gap-2">
-          <a class="nav-link active" href="#hero">Home</a>
+        <a class="navbar-brand" href="#hero">
+          <span class="brand-icon" aria-hidden="true"><i class="bi bi-braces-asterisk"></i></span>
+          Portfolio
+        </a>
+        <div class="navbar-nav ms-auto flex-row flex-wrap">
+          <a class="nav-link" href="#hero">Home</a>
           <a class="nav-link" href="#about">About Me</a>
           <a class="nav-link" href="#projects">Projects</a>
           <a class="nav-link" href="#contact">Contact</a>
@@ -35,50 +37,45 @@
   <main id="main-content">
 
     <!-- HERO -->
-    <section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center">
-      <div class="hero-overlay"></div>
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-content container px-3">
-        <p class="hero-eyebrow">Welcome to my portfolio</p>
-        <h1 class="hero-heading">I am <span>Mukelani Nkazimulo Sindana</span></h1>
-        <p class="hero-sub">Full Stack Web Developer in Training</p>
-        <div class="hero-tags d-flex justify-content-center flex-wrap gap-2 mt-4">
-          <span class="hero-tag">Gamer</span>
-          <span class="hero-tag">Anime fan</span>
-          <span class="hero-tag">Problem solver</span>
-        </div>
-        <div class="mt-4 d-flex justify-content-center flex-wrap gap-3">
-          <a href="#projects" class="btn-hero">View my work</a>
-          <a href="#contact" class="btn-hero-outline">Get in touch</a>
-        </div>
+        <p class="hero-eyebrow">Gauteng, South Africa · iHub Africa · Leveling up daily</p>
+        <h1 id="hero-heading" class="hero-heading">I am <span class="hero-name">Mukelani N. Sindana</span>.</h1>
+        <p class="hero-sub">Website Designer &amp; Web Developer</p>
+        <p class="hero-tagline">Building responsive sites that evolve with every new skill I unlock.</p>
       </div>
     </section>
 
     <!-- ABOUT ME -->
-    <section id="about" class="about-section py-5">
+    <section id="about" class="about-section" aria-labelledby="about-heading">
       <div class="container">
-        <div class="text-center mb-4">
-          <span class="section-label">Who am I? I'm the next best thing</span>
-        </div>
         <div class="row justify-content-center">
-          <div class="col-lg-10">
+          <div class="col-xl-10">
             <div class="about-card">
               <div class="row g-0">
 
-                <!-- LEFT COLUMN -->
-                <div class="col-md-4 about-left d-flex flex-column align-items-center text-center p-4">
-                  <div class="about-avatar mb-3">
-                    <img src="./images/image.png" alt="Mukelani N. Sindana profile photo" class="profile-img"/>
+                <div class="col-md-4 about-left d-flex flex-column align-items-center text-center p-4 p-lg-5">
+                  <div class="profile-ring">
+                    <img
+                      src="images/image.png"
+                      alt="Portrait photo of Mukelani N. Sindana smiling in professional attire"
+                      class="profile-img"
+                      width="120"
+                      height="120"
+                    />
                   </div>
-                  <h3 class="about-name">Mukelani Nkazimulo Sindana</h3>
-                  <p class="about-role">Full Stack Developer in Training</p>
-                  <ul class="about-details list-unstyled mt-3 w-100">
+                  <h2 class="about-name h5">Mukelani N. Sindana</h2>
+                  <p class="about-role">Website Designer in Training</p>
+
+                  <ul class="about-details list-unstyled mt-3 mb-0">
                     <li>
                       <span class="detail-label">Name</span>
                       <span class="detail-value">Mukelani N. Sindana</span>
                     </li>
                     <li>
                       <span class="detail-label">Profile</span>
-                      <span class="detail-value">Full Stack Developer</span>
+                      <span class="detail-value">Website Designer</span>
                     </li>
                     <li>
                       <span class="detail-label">Phone</span>
@@ -88,49 +85,37 @@
                       <span class="detail-label">Email</span>
                       <span class="detail-value">studentzero68@gmail.com</span>
                     </li>
-                    <li>
-                      <span class="detail-label">Location</span>
-                      <span class="detail-value">Gauteng, South Africa</span>
-                    </li>
-                    <li>
-                      <span class="detail-label">Status</span>
-                      <span class="detail-value">Open to opportunities</span>
-                    </li>
                   </ul>
+
                   <div class="skills-badges mt-4">
-                    <span class="badge-skill">HTML</span>
-                    <span class="badge-skill">CSS</span>
-                    <span class="badge-skill">JavaScript</span>
-                    <span class="badge-skill">Git</span>
-                    <span class="badge-skill">GitHub</span>
-                    <span class="badge-skill">Bootstrap</span>
-                    <span class="badge-skill">Netlify</span>
-                    <span class="badge-skill">Figma</span>
-                    <span class="badge-skill">VS Code</span>
-                    <span class="badge-skill">Canva</span>
+                    <span class="badge rounded-pill badge-core">HTML</span>
+                    <span class="badge rounded-pill badge-core">CSS</span>
+                    <span class="badge rounded-pill badge-core">Bootstrap</span>
+                    <span class="badge rounded-pill badge-stack">JavaScript</span>
+                    <span class="badge rounded-pill badge-stack">Git</span>
+                    <span class="badge rounded-pill badge-stack">GitHub</span>
+                    <span class="badge rounded-pill badge-tool">Figma</span>
+                    <span class="badge rounded-pill badge-tool">Netlify</span>
+                    <span class="badge rounded-pill badge-tool">VS Code</span>
+                    <span class="badge rounded-pill badge-tool">Canva</span>
                   </div>
                 </div>
 
-                <!-- RIGHT COLUMN -->
-                <div class="col-md-8 about-right p-4">
+                <div class="col-md-8 about-right p-4 p-lg-5">
                   <span class="section-label">About me</span>
-                  <h2 class="about-heading mt-2 mb-3">Building things that actually matter</h2>
-                  <p class="about-text">I am Mukelani, a 20-year-old Full Stack Web Developer in training studying at iHub Africa, based in Gauteng, South Africa. I didn't come from a background that handed me everything so I learned early that if I want something I have to go and get it myself.</p>
-                  <p class="about-text">What drives me is building things that actually matter — charity platforms, community pages and experiences that make people feel something. I am quick to adapt, I don't mind making mistakes and I don't pretend to know everything. I just keep going.</p>
-                  <div class="row mt-4 g-3">
-                    <div class="col-6">
-                      <div class="about-stat">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Projects deployed</span>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="about-stat">
-                        <span class="stat-number">2</span>
-                        <span class="stat-label">Terms completed</span>
-                      </div>
-                    </div>
-                  </div>
+                  <h2 id="about-heading" class="about-heading mt-3">Designing sites people actually want to use</h2>
+                  <p class="about-text">
+                    I am Mukelani, a 20-year-old website designer in training at iHub Africa, based in Gauteng.
+                    I did not start with a clear path into tech, so I learned to build my own — one layout, one fix, and one deployed project at a time.
+                    I care about clean structure, readable typography, and layouts that feel intentional on every screen size.
+                    My work so far includes Tesla, Netflix, and YouTube clones, plus apps like a To-Do List and Baker's Delight.
+                    I am open to internships, freelance work, and collaborations where I can keep growing as a designer who ships real projects.
+                  </p>
+
+                  <details class="about-extra mt-4">
+                    <summary>Beyond the code</summary>
+                    <p>Gamer, anime fan, and problem solver — I bring the same focus from my hobbies into every interface I design.</p>
+                  </details>
                 </div>
 
               </div>
@@ -141,155 +126,140 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="projects-section py-5">
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
       <div class="container">
         <div class="text-center mb-5">
           <span class="section-label">My work</span>
-          <h2 class="projects-heading mt-2">Things I have built</h2>
-          <p class="projects-sub">Real projects, real code, real lessons learned.</p>
+          <h2 id="projects-heading" class="section-title">Projects I've built</h2>
+          <p class="projects-intro mt-3 mb-0">Six builds from my coursework and personal practice — each one a step toward hire-me-now energy.</p>
         </div>
-        <div class="row g-4">
 
-          <!-- PROJECT 1 — TESLA -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="project-card">
+        <div class="row g-4 projects-grid">
+
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
               <div class="project-img-wrap">
-                <img src="images/Screenshot_2026-04-23_151630.png" alt="Tesla UI Clone project screenshot showing hero section with car" class="project-img"/>
-                <span class="project-badge">Live</span>
+                <img
+                  src="images/Screenshot 2026-04-23 151630.png"
+                  alt="Tesla UI clone homepage with full-width hero and navigation bar"
+                  class="project-img"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <h3 class="project-title">Tesla UI Clone</h3>
                 <p class="project-sub">Built with HTML and CSS</p>
-                <p class="project-desc">A Tesla-inspired website built to practice modern UI design and layout techniques. Clean sections, smooth scrolling and a polished dark aesthetic.</p>
-                <div class="project-tags">
-                  <span class="project-tag">HTML</span>
-                  <span class="project-tag">CSS</span>
-                </div>
-                <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/Tesla-project-mukelani/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline" aria-label="View Tesla project code"><i class="bi bi-code-slash"></i></a>
+                <div class="project-actions">
+                  <a href="https://studentzero68-collab.github.io/Tesla-project-mukelani/" class="btn btn-primary btn-sm btn-mns" target="_blank" rel="noopener noreferrer">View Website</a>
+                  <a href="https://github.com/studentzero68-collab" class="btn btn-outline-secondary btn-code" target="_blank" rel="noopener noreferrer" aria-label="View Tesla project code on GitHub"><i class="bi bi-code-slash" aria-hidden="true"></i></a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
-          <!-- PROJECT 2 — NETFLIX -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="project-card">
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
               <div class="project-img-wrap">
-                <img src="images/Screenshot_2026-05-26_140856.png" alt="Netflix Landing Page clone screenshot showing hero with email signup" class="project-img"/>
-                <span class="project-badge">Live</span>
+                <img
+                  src="images/Screenshot 2026-05-26 140856.png"
+                  alt="Netflix landing page clone with dark hero and email signup form"
+                  class="project-img"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <h3 class="project-title">Netflix Landing Page</h3>
                 <p class="project-sub">Built with HTML and CSS</p>
-                <p class="project-desc">A responsive Netflix-inspired landing page with a modern dark UI. My most independently built project — image fixes and layout corrections done without AI.</p>
-                <div class="project-tags">
-                  <span class="project-tag">HTML</span>
-                  <span class="project-tag">CSS</span>
-                </div>
-                <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/Netflix/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline" aria-label="View Netflix project code"><i class="bi bi-code-slash"></i></a>
+                <div class="project-actions">
+                  <a href="https://studentzero68-collab.github.io/Netflix/" class="btn btn-primary btn-sm btn-mns" target="_blank" rel="noopener noreferrer">View Website</a>
+                  <a href="https://github.com/studentzero68-collab" class="btn btn-outline-secondary btn-code" target="_blank" rel="noopener noreferrer" aria-label="View Netflix project code on GitHub"><i class="bi bi-code-slash" aria-hidden="true"></i></a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
-          <!-- PROJECT 3 — YOUTUBE -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="project-card">
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
               <div class="project-img-wrap">
-                <img src="images/Screenshot_2026-06-15_110911.png" alt="YouTube Clone screenshot showing video grid with dark mode" class="project-img"/>
-                <span class="project-badge">Live</span>
+                <img
+                  src="images/Screenshot 2026-06-15 110911.png"
+                  alt="YouTube clone interface showing sidebar navigation and video grid"
+                  class="project-img"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <h3 class="project-title">YouTube Basic Clone</h3>
                 <p class="project-sub">Built with HTML, CSS and JavaScript</p>
-                <p class="project-desc">A YouTube clone built section by section with a dark and light mode toggle, sidebar navigation and a video grid layout.</p>
-                <div class="project-tags">
-                  <span class="project-tag">HTML</span>
-                  <span class="project-tag">CSS</span>
-                  <span class="project-tag">JavaScript</span>
-                </div>
-                <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/Youtube-basic" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab/Youtube-basic" target="_blank" class="btn-project-outline" aria-label="View YouTube project code"><i class="bi bi-code-slash"></i></a>
+                <div class="project-actions">
+                  <a href="https://studentzero68-collab.github.io/Youtube-basic" class="btn btn-primary btn-sm btn-mns" target="_blank" rel="noopener noreferrer">View Website</a>
+                  <a href="https://github.com/studentzero68-collab/Youtube-basic" class="btn btn-outline-secondary btn-code" target="_blank" rel="noopener noreferrer" aria-label="View YouTube project code on GitHub"><i class="bi bi-code-slash" aria-hidden="true"></i></a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
-          <!-- PROJECT 4 — TO-DO -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="project-card">
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
               <div class="project-img-wrap">
-                <img src="images/Screenshot_2026-05-21_142913.png" alt="To-Do List App screenshot showing task cards on purple background" class="project-img"/>
-                <span class="project-badge">Live</span>
+                <img
+                  src="images/Screenshot 2026-05-21 142913.png"
+                  alt="To-Do List app with colorful task cards on a purple background"
+                  class="project-img"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <h3 class="project-title">To-Do List App</h3>
                 <p class="project-sub">Built with HTML, CSS and JavaScript</p>
-                <p class="project-desc">A fully functioning To-Do List app with status tracking, filtering, due dates and localStorage so your tasks survive a page refresh.</p>
-                <div class="project-tags">
-                  <span class="project-tag">HTML</span>
-                  <span class="project-tag">CSS</span>
-                  <span class="project-tag">JavaScript</span>
-                </div>
-                <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/To-do-list/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab" target="_blank" class="btn-project-outline" aria-label="View To-Do project code"><i class="bi bi-code-slash"></i></a>
+                <div class="project-actions">
+                  <a href="https://studentzero68-collab.github.io/To-do-list/" class="btn btn-primary btn-sm btn-mns" target="_blank" rel="noopener noreferrer">View Website</a>
+                  <a href="https://github.com/studentzero68-collab" class="btn btn-outline-secondary btn-code" target="_blank" rel="noopener noreferrer" aria-label="View To-Do List project code on GitHub"><i class="bi bi-code-slash" aria-hidden="true"></i></a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
-          <!-- PROJECT 5 — BAKERY -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="project-card">
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
               <div class="project-img-wrap">
-                <img src="images/download__5_.jpg" alt="Baker's Delight cookbook showing pastries and recipe cards" class="project-img"/>
-                <span class="project-badge project-badge-wip">In progress</span>
+                <img
+                  src="images/download (5).jpg"
+                  alt="Baker's Delight recipe site preview showing pastries and recipe cards"
+                  class="project-img"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <h3 class="project-title">Baker's Delight</h3>
                 <p class="project-sub">Built with HTML, CSS and JavaScript</p>
-                <p class="project-desc">A personal recipe cookbook with personality — gamer jokes, anime references, symbolism for each recipe and who to bake it for.</p>
-                <div class="project-tags">
-                  <span class="project-tag">HTML</span>
-                  <span class="project-tag">CSS</span>
-                  <span class="project-tag">JavaScript</span>
-                </div>
-                <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://github.com/studentzero68-collab/Bakery-project1" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab/Bakery-project1.git" target="_blank" class="btn-project-outline" aria-label="View Bakery project code"><i class="bi bi-code-slash"></i></a>
+                <div class="project-actions">
+                  <a href="https://github.com/studentzero68-collab/Bakery-project1" class="btn btn-primary btn-sm btn-mns" target="_blank" rel="noopener noreferrer">View Website</a>
+                  <a href="https://github.com/studentzero68-collab/Bakery-project1" class="btn btn-outline-secondary btn-code" target="_blank" rel="noopener noreferrer" aria-label="View Baker's Delight project code on GitHub"><i class="bi bi-code-slash" aria-hidden="true"></i></a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
-          <!-- PROJECT 6 — PORTFOLIO -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="project-card">
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
               <div class="project-img-wrap">
-                <img src="images/Screenshot_2026-06-15_110937.png" alt="Personal Portfolio website screenshot showing dark themed layout" class="project-img"/>
-                <span class="project-badge">Live</span>
+                <img
+                  src="images/Screenshot 2026-06-15 110856.png"
+                  alt="Personal portfolio website preview with hero section and project cards"
+                  class="project-img"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <h3 class="project-title">Personal Portfolio</h3>
                 <p class="project-sub">Built with HTML, CSS and Bootstrap</p>
-                <p class="project-desc">The site you are on right now. Built with Bootstrap 5, fully responsive from mobile to desktop and deployed on GitHub Pages.</p>
-                <div class="project-tags">
-                  <span class="project-tag">HTML</span>
-                  <span class="project-tag">CSS</span>
-                  <span class="project-tag">Bootstrap</span>
-                </div>
-                <div class="project-btns d-flex gap-2 mt-3">
-                  <a href="https://studentzero68-collab.github.io/Portfolio/" target="_blank" class="btn-project-primary">View Website</a>
-                  <a href="https://github.com/studentzero68-collab/Portfolio.git" target="_blank" class="btn-project-outline" aria-label="View Portfolio code"><i class="bi bi-code-slash"></i></a>
+                <div class="project-actions">
+                  <a href="https://studentzero68-collab.github.io/Portfolio/" class="btn btn-primary btn-sm btn-mns" target="_blank" rel="noopener noreferrer">View Website</a>
+                  <a href="https://github.com/studentzero68-collab/Portfolio" class="btn btn-outline-secondary btn-code" target="_blank" rel="noopener noreferrer" aria-label="View portfolio project code on GitHub"><i class="bi bi-code-slash" aria-hidden="true"></i></a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
         </div>
@@ -297,104 +267,62 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact-section py-5">
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-4">
           <span class="section-label">Get in touch</span>
-          <h2 class="contact-heading mt-2">Let's connect</h2>
-          <p class="contact-sub">I am open to opportunities, collaborations and conversations.</p>
+          <h2 id="contact-heading" class="section-title">Let's connect</h2>
+          <p class="contact-intro mt-3 mb-0">Got a project, internship, or collab in mind? I'd love to hear from you.</p>
         </div>
 
-        <!-- SOCIAL ICONS ROW -->
-        <div class="col-12 text-center mb-4">
-          <div class="social-icons d-flex justify-content-center gap-3">
-            <a href="https://github.com/studentzero68-collab" target="_blank" class="social-icon" aria-label="GitHub">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mukelani-sindana" target="_blank" class="social-icon" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </div>
+        <div class="social-icons mb-4" aria-label="Social media links">
+          <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/studentzero68-collab" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <i class="bi bi-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mukelani-sindana" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
         </div>
 
-        <div class="row justify-content-center g-4">
-
-          <!-- CONTACT FORM -->
-          <div class="col-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
             <div class="contact-card">
-              <form action="#" method="POST" novalidate>
+              <form action="#" method="post">
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label for="contact-email" class="form-label contact-label">Email address</label>
-                    <input type="email" id="contact-email" name="email" class="form-control contact-input" placeholder="your@email.com" required/>
+                    <label for="contact-email" class="form-label">Email Address</label>
+                    <input type="email" id="contact-email" name="email" class="form-control" placeholder="your@email.com" required autocomplete="email"/>
                   </div>
                   <div class="col-md-6">
-                    <label for="contact-name" class="form-label contact-label">Name</label>
-                    <input type="text" id="contact-name" name="name" class="form-control contact-input" placeholder="Your name" required/>
+                    <label for="contact-name" class="form-label">Name</label>
+                    <input type="text" id="contact-name" name="name" class="form-control" placeholder="Your name" required autocomplete="name"/>
                   </div>
                   <div class="col-12">
-                    <label for="contact-subject" class="form-label contact-label">Subject</label>
-                    <input type="text" id="contact-subject" name="subject" class="form-control contact-input" placeholder="What is this about?" required/>
+                    <label for="contact-subject" class="form-label">Subject</label>
+                    <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="What is this about?" required/>
                   </div>
                   <div class="col-12">
-                    <label for="contact-message" class="form-label contact-label">Message</label>
-                    <textarea id="contact-message" name="message" class="form-control contact-input" rows="5" placeholder="Tell me what you have in mind..." required></textarea>
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Tell me what you have in mind..." required></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn-contact-submit w-100">Send message</button>
+                    <button type="submit" class="btn btn-primary w-100 btn-mns">Submit</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-
-          <!-- CONTACT DETAILS -->
-          <div class="col-lg-4">
-            <div class="contact-details d-flex flex-column gap-3">
-              <div class="contact-detail-item">
-                <div class="contact-detail-icon"><i class="bi bi-envelope"></i></div>
-                <div>
-                  <p class="contact-detail-label">Email</p>
-                  <p class="contact-detail-value">studentzero68@gmail.com</p>
-                </div>
-              </div>
-              <div class="contact-detail-item">
-                <div class="contact-detail-icon"><i class="bi bi-geo-alt"></i></div>
-                <div>
-                  <p class="contact-detail-label">Location</p>
-                  <p class="contact-detail-value">Gauteng, South Africa</p>
-                </div>
-              </div>
-              <div class="contact-detail-item">
-                <div class="contact-detail-icon"><i class="bi bi-github"></i></div>
-                <div>
-                  <p class="contact-detail-label">GitHub</p>
-                  <p class="contact-detail-value">studentzero68-collab</p>
-                </div>
-              </div>
-              <div class="contact-detail-item">
-                <div class="contact-detail-icon"><i class="bi bi-briefcase"></i></div>
-                <div>
-                  <p class="contact-detail-label">Status</p>
-                  <p class="contact-detail-value">Open to opportunities</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer-bar text-center py-4">
+  <footer class="footer-bar text-center">
     <p class="mb-0">Developed by <span class="footer-name">Mukelani N. Sindana</span> using Bootstrap, for portfolio purposes.</p>
-    <p class="footer-copy mt-1">© 2026 Mukelani N. Sindana. All rights reserved.</p>
   </footer>
 
 </body>
